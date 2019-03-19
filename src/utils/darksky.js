@@ -15,7 +15,7 @@ const getForecast = (latitude, longitude, callback) => {
             return callback('Invalid latitude or longitude!')
             //return
         }
-        callback(undefined, body)
+        callback(undefined, body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degrees F.')
     })
 }
 

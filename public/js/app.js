@@ -19,9 +19,9 @@ weatherForm.addEventListener('submit', (e) => {
                     //console.log(data.error)
                     messageOne.textContent = data.error
                 } else {
-                    //console.log(data)
+                    console.log(data)
                     messageOne.textContent = data.location
-                    messageTwo.textContent = data.forecast.hourly.summary
+                    messageTwo.textContent = data.forecast
                 }
             })
         })
